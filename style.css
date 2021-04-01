@@ -2867,7 +2867,7 @@ h5.cyg_widget-title {
 }
 
 .list-v2 .category::before {
-    content: "/";
+  /*  content: "/"; */
 }
 
 .listv2-project {
