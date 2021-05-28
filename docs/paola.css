@@ -29,3 +29,23 @@
 .vertical-item-meta {
     width: 100%;
 }
+
+#intro01{
+    background-color: black;
+    padding: 30%;
+}
+#intro02{
+    background-color: white;
+    padding: 30%;
+    margin-bottom: 30%;
+}
+#intro01 img{  display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+
+    .full-width {
+      margin-left: calc(50% - 50vw);
+      margin-right: calc(50% - 50vw);
+    }
