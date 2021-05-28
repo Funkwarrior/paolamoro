@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+.cygni-horizontal-titles .title {
+    font-family: 'Bodoni Moda', serif;
+}
+.project-title  {
+    font-family: 'Bodoni Moda', serif;
+}
+
+.project-top {
+    top: 55%;
+}
+
+.project-meta {
+    top: 70%;
+}
+.project-summary {
+    top: 70%;
+}
+.vertical-item-title{
+    font-family: 'Bodoni Moda', serif;
+    text-shadow:
+    -1px -1px 0 #FFF,
+    1px -1px 0 #FFF,
+    -1px 1px 0 #FFF,
+    1px 1px 0 #FFF;
+} 
+
+
+.vertical-item-meta {
+    width: 100%;
+}
