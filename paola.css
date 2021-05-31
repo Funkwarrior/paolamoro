@@ -6,9 +6,11 @@
    /* font-family: 'Bodoni Moda', serif; */
    font-weight: 200;
 }
-
+.layout-dark .project-title{
+    color: white;
+}
 .project-top {
-    top: 55%;
+    top: 60%;
     max-width: inherit;
 }
 
@@ -16,8 +18,15 @@
     top: 70%;
 }
 .project-summary {
-    top: 70%;
+    top: 80%;
+    max-width: 60vw;
+    right: inherit;
+    left: 20%;
 }
+.layout-dark .project-summary{
+    color: white;
+}
+
 .vertical-item-title{
   /*  font-family: 'Bodoni Moda', serif;*/
   font-size: 75px;
@@ -71,3 +80,7 @@
         height: 0%
     }
 */
+
+.white{
+    color: white !important;
+}
