@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
 .cygni-horizontal-titles .title {
-    font-family: 'Bodoni Moda', serif;
+  /*  font-family: 'Bodoni Moda', serif; */
 }
 .project-title  {
-    font-family: 'Bodoni Moda', serif;
+   /* font-family: 'Bodoni Moda', serif; */
+   font-weight: 200;
 }
 
 .project-top {
     top: 55%;
+    max-width: inherit;
 }
 
 .project-meta {
@@ -17,17 +19,19 @@
     top: 70%;
 }
 .vertical-item-title{
-    font-family: 'Bodoni Moda', serif;
-    text-shadow:
-    -1px -1px 0 #FFF,
-    1px -1px 0 #FFF,
-    -1px 1px 0 #FFF,
-    1px 1px 0 #FFF;
-} 
-
+  /*  font-family: 'Bodoni Moda', serif;*/
+  font-size: 75px;
+  font-weight: 400;
+}
+.next-project-title {
+    font-size: 30px;
+    font-weight: 100;
+    max-width: inherit;
+}
 
 .vertical-item-meta {
     width: 100%;
+    left: 46%;
 }
 
 #intro01{
@@ -49,3 +53,21 @@
       margin-left: calc(50% - 50vw);
       margin-right: calc(50% - 50vw);
     }
+
+/*
+    .pi-ov-in.pi-ov-1 {
+        height: 0%
+    }
+
+    .pi-ov-in.pi-ov-2 {
+        height: 0%
+    }
+
+    .pi-ov-in.pi-ov-3 {
+        height: 0%
+    }
+
+    .pi-ov-in.pi-ov-4 {
+        height: 0%
+    }
+*/
