@@ -11,6 +11,10 @@ body, .pi-ov, .np-ov{
   font-family: 'Bodoni Moda', serif;
    font-weight: 200;
 }
+
+.vertical-item-title{
+    padding: 15px 0;
+}
 .layout-dark .project-title{
     color: white;
 }
