@@ -6,7 +6,8 @@ body, .pi-ov, .np-ov{
 .cygni-horizontal-titles .title {
   /*  font-family: 'Bodoni Moda', serif; */
 }
-.project-title  {
+.project-title,
+.vertical-item-title  {
   font-family: 'Bodoni Moda', serif;
    font-weight: 200;
 }
