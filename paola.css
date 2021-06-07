@@ -70,12 +70,10 @@ body, .pi-ov, .np-ov{
 
 #intro01{
     background-color: black;
-    padding: 30%;
+    height: 100%;
 }
 #intro02{
     background-color: white;
-    padding: 30%;
-    margin-bottom: 30%;
 }
 #intro01 img{  display: block;
     margin-left: auto;
