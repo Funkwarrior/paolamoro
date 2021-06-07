@@ -43,6 +43,15 @@ body, .pi-ov, .np-ov{
   /*  font-family: 'Bodoni Moda', serif;*/
   font-size: 75px;
   font-weight: 400;
+  line-height: 100px;
+
+}
+.menu > li > a {
+    line-height: 55px;
+    font-size: 35px;
+}
+.menu > li > a::before {
+    white-space: nowrap
 }
 .next-project-title {
     font-size: 60px;
