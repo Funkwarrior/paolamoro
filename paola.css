@@ -161,6 +161,35 @@ h3 {
     font-family: 'Bodoni Moda', serif;
     line-height: 4vw;
 }
+.section-1 {
+    font-family: 'Bodoni Moda', serif;
+    width: 100vw;
+    transform: translateX(-17.5%);
+overflow: scroll;
+margin-bottom: 100px;
+}
+.section-1 .images-container {
+    display: grid;
+    padding: 0 8px;
+    gap: 8px;
+    margin-top: 16px;
+    grid-template-columns: repeat(4, minmax(0, 4fr));
+
+}
+.section-1 .intro-image-wrapper{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    min-height: 350px;
+}
+.section-1 .images-container img {
+/*     width: 100%;
+    max-height: 75vh; 
+    height: 100%;
+    align-self: stretch;*/
+    object-fit: cover;
+    max-width: 100%;
+}
 .section-2 {
     font-family: 'Bodoni Moda', serif;
     width: 100vw;
