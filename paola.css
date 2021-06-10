@@ -1,20 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
-body, .pi-ov, .np-ov{
+
+body,
+.pi-ov,
+.np-ov {
     background-color: white;
 }
 
 .cygni-horizontal-titles .title {
-  /*  font-family: 'Bodoni Moda', serif; */
-}
-.project-title,
-.vertical-item-title  {
-  font-family: 'Bodoni Moda', serif;
-   font-weight: 200;
+    /*  font-family: 'Bodoni Moda', serif; */
 }
 
-.layout-dark .project-title{
+.project-title,
+.vertical-item-title {
+    font-family: 'Bodoni Moda', serif;
+    font-weight: 200;
+}
+
+.layout-dark .project-title {
     color: white;
 }
+
 .project-top {
     top: 60%;
     max-width: inherit;
@@ -28,66 +33,76 @@ body, .pi-ov, .np-ov{
     top: 80%;
     font-weight: 200;
     font-size: 20px;
-/*
+    /*
     max-width: 60vw;
     right: inherit;
     left: 20%;
     */
 }
-.project-summary-paola{
-      top: 30%;
+
+.project-summary-paola {
+    top: 30%;
 }
-.layout-dark .project-summary{
+
+.layout-dark .project-summary {
     color: white;
 }
 
-.vertical-item-title{
-  /*  font-family: 'Bodoni Moda', serif;*/
-  font-size: 75px;
-  font-weight: 400;
-  line-height: 100px;
+.vertical-item-title {
+    /*  font-family: 'Bodoni Moda', serif;*/
+    font-size: 75px;
+    font-weight: 400;
+    line-height: 100px;
 
 }
-.menu > li > a {
+
+.menu>li>a {
     line-height: 55px;
     font-size: 35px;
 }
-.menu > li > a::before {
+
+.menu>li>a::before {
     white-space: nowrap
 }
+
 .next-project-title {
-  font-family: 'Bodoni Moda', serif;
+    font-family: 'Bodoni Moda', serif;
     font-size: 60px;
     font-weight: 100;
     max-width: inherit;
 }
-.next-project span{
-  text-transform: inherit;
-  font-size: 20px;
-  opacity: .8 !important;
+
+.next-project span {
+    text-transform: inherit;
+    font-size: 20px;
+    opacity: .8 !important;
 }
+
 .vertical-item-meta {
     width: 100%;
     left: 50%;
 }
 
-#intro01{
+#intro01 {
     background-color: black;
     height: 100%;
 }
-#intro02{
+
+#intro02 {
     background-color: white;
 }
-#intro01 img{  display: block;
+
+#intro01 img {
+    display: block;
     margin-left: auto;
     margin-right: auto
 }
 
 
-    .full-width {
-      margin-left: calc(50% - 50vw);
-      margin-right: calc(50% - 50vw);
-    }
+.full-width {
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+}
 
 /*
     .pi-ov-in.pi-ov-1 {
@@ -107,32 +122,89 @@ body, .pi-ov, .np-ov{
     }
 */
 
-.white{
+.white {
     color: white !important;
 }
+
 h3 {
     font-weight: 400;
 }
 
-.next-project-image-wrapper{
-  background-color: #2a211c;
+.next-project-image-wrapper {
+    background-color: #2a211c;
 }
 
 .projects-nav {
     min-height: 55vh;
 }
+
 .vertical-image-wrapper {
     width: 45%;
     min-height: 350px;
 }
+
 .vertical-item:nth-child(even) .vertical-item-meta {
     right: 55%;
 }
+
 .each {
-	border-bottom: 1px solid white;
-	padding: 1rem;
-	height: 100vh;
-	scroll-snap-align: start;
-	text-align: center;
-	position: relative;
+    border-bottom: 1px solid white;
+    padding: 1rem;
+    height: 80vh;
+    scroll-snap-align: start;
+    text-align: center;
+    position: relative;
+}
+
+.section-0 p {
+    font-size: 3vw;
+    font-family: 'Bodoni Moda', serif;
+    line-height: 4vw;
+}
+.section-2 {
+    font-family: 'Bodoni Moda', serif;
+    width: 100vw;
+    transform: translateX(-17.5%);
+overflow: scroll;
+margin-bottom: 100px;
+}
+
+.section-2 blockquote {
+    font-size: 5vmin;
+    line-height: 10vmin;
+    padding: 16px 16px 0 16px;
+}
+
+.section-2 cite {
+    display: block;
+}
+
+
+.section-2 .images-container {
+    display: grid;
+    padding: 0 8px;
+    gap: 8px;
+    margin-top: 16px;
+    grid-template-columns: repeat(7, minmax(0, 7fr));
+
+}
+.section-2 .intro-image-wrapper{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    min-height: 350px;
+}
+.section-2 .images-container img {
+/*     width: 100%;
+    max-height: 75vh; 
+    height: 100%;
+    align-self: stretch;*/
+    object-fit: cover;
+    max-width: 100%;
+}
+.section-4 {
+    font-family: 'Bodoni Moda', serif;
+    width: 100vw;
+    transform: translateX(-17.5%);
+
 }
