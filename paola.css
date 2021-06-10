@@ -180,7 +180,7 @@ margin-bottom: 100px;
     display: block;
     position: relative;
     overflow: hidden;
-    min-height: 350px;
+    min-height: 100vh;
 }
 .section-1 .images-container img {
 /*     width: 100%;
@@ -188,7 +188,8 @@ margin-bottom: 100px;
     height: 100%;
     align-self: stretch;*/
     object-fit: cover;
-    max-width: 100%;
+    width: 100%; /* image box size as % of container, see step 1 */
+    height: 100%; /* image box size as % of container, see step 1 */
 }
 .section-2 {
     font-family: 'Bodoni Moda', serif;
