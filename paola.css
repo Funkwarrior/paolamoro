@@ -160,6 +160,7 @@ h3 {
     font-size: 3vw;
     font-family: 'Bodoni Moda', serif;
     line-height: 4vw;
+    text-align: center;
 }
 .section-1 {
     font-family: 'Bodoni Moda', serif;
@@ -170,8 +171,8 @@ margin-bottom: 100px;
 }
 .section-1 .images-container {
     display: grid;
-    padding: 0 8px;
-    gap: 8px;
+    padding: 0;
+    gap: 0px;
     margin-top: 16px;
     grid-template-columns: repeat(4, minmax(0, 4fr));
 
@@ -180,7 +181,9 @@ margin-bottom: 100px;
     display: block;
     position: relative;
     overflow: hidden;
+    /*
     min-height: 100vh;
+    */
 }
 .section-1 .images-container img {
 /*     width: 100%;
@@ -191,9 +194,28 @@ margin-bottom: 100px;
     width: 100%; /* image box size as % of container, see step 1 */
     height: 100%; /* image box size as % of container, see step 1 */
 }
+.section-1 .intro:nth-child(1){
+  height:300px;
+}
+.section-1 .intro:nth-child(2){
+  height:500px;
+}
+.section-1 .intro:nth-child(3){
+  height:700px;
+}
+.section-1 .intro:nth-child(4){
+  height:500px;
+}
+
+
+
 .section-4 {
     font-family: 'Bodoni Moda', serif;
     width: 100vw;
     transform: translateX(-17.5%);
 
+}
+.section-4 h3{
+  font-size: 55px;
+  color:#FFF;
 }
