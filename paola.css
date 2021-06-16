@@ -143,32 +143,73 @@ h3 {
     min-height: 350px;
 }
 
+.vertical-projects {
+    width: 100%;
+    padding-top: 0vh;
+}
+
+.vertical-container {
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .vertical-item:nth-child(even) .vertical-item-meta {
     right: 55%;
 }
+.vertical-item-link {
 
-.each {
+    width: 100%;
+}
+.section-0 {
     border-bottom: 1px solid white;
     padding: 1rem;
-    height: 80vh;
+    height: 100vh;
     scroll-snap-align: start;
     text-align: center;
     position: relative;
+    display: table-cell;
+    vertical-align: middle;
 }
 
-.section-0 p {
+
+.section-0 span {
+    -webkit-transform: translatey(-100%);
+    -ms-transform: translatey(-100%);
+    transform: translatey(-100%);
+    -webkit-transition: all 1.6s cubic-bezier(0.42, 0.4, 0.26, 1.01);
+    -o-transition: all 1.6s cubic-bezier(0.42, 0.4, 0.26, 1.01);
+    transition: all 1.6s cubic-bezier(0.42, 0.4, 0.26, 1.01);
+    -webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+    opacity: 0;
+    visibility: hidden;
+
+}
+
+.section-0 span.intro-in {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    opacity: 1;
+    visibility: visible;
+}
+
+.section-0 p,
+.section-2 p {
     font-size: 3vw;
     font-family: 'Bodoni Moda', serif;
     line-height: 4vw;
     text-align: center;
 }
+
+
 .section-1 {
-    font-family: 'Bodoni Moda', serif;
     width: 100vw;
-    transform: translateX(-17.5%);
-overflow: scroll;
-margin-bottom: 100px;
+    margin-bottom: 100px;
 }
+
 .section-1 .images-container {
     display: grid;
     padding: 0;
@@ -177,45 +218,50 @@ margin-bottom: 100px;
     grid-template-columns: repeat(4, minmax(0, 4fr));
 
 }
-.section-1 .intro-image-wrapper{
+
+.section-1 .intro-image-wrapper {
     display: block;
     position: relative;
-    overflow: hidden;
-    /*
-    min-height: 100vh;
-    */
 }
+
 .section-1 .images-container img {
-/*     width: 100%;
-    max-height: 75vh;
-    height: 100%;
-    align-self: stretch;*/
+
     object-fit: cover;
-    width: 100%; /* image box size as % of container, see step 1 */
-    height: 100%; /* image box size as % of container, see step 1 */
+    width: 100%;
+    /* image box size as % of container, see step 1 */
+    height: 100%;
+    /* image box size as % of container, see step 1 */
 }
-.section-1 .intro:nth-child(1){
-  height:300px;
+
+.section-1 .intro:nth-child(1) {
+    height: 80vh;
+    padding-top: -10vh;
 }
-.section-1 .intro:nth-child(2){
-  height:500px;
+
+.section-1 .intro:nth-child(2) {
+    height: 90vh;
+    padding-top: -5vh;
+
 }
-.section-1 .intro:nth-child(3){
-  height:700px;
+
+.section-1 .intro:nth-child(3) {
+    height: 130vh;
+    padding-top: -15vh;
 }
-.section-1 .intro:nth-child(4){
-  height:500px;
+
+.section-1 .intro:nth-child(4) {
+    height: 90vh;
+    padding-top: -5vh;
 }
 
 
 
-.section-4 {
+.section-3 {
     font-family: 'Bodoni Moda', serif;
-    width: 100vw;
-    transform: translateX(-17.5%);
 
 }
-.section-4 h3{
-  font-size: 55px;
-  color:#FFF;
+
+.section-3 h3 {
+    font-size: 55px;
+    color: #FFF;
 }

@@ -1259,19 +1259,29 @@
                     });
 
                     window.verticalScroll = verticalScroll;
-
+                    verticalScroll.on("call", (obj, func, dir) => {
+                        console.log(dir);
+                        if (obj == "on") {
+                            $('.dark-logo').css('display', 'none');
+                            $('.light-logo').css('display', 'block');
+                        }else{
+                            $('.dark-logo').css('display', 'block');
+                            $('.light-logo').css('display', 'none');  
+                        }
+                    });
                 }, 250);
 
                 setTimeout(function () {
                     $('.site-branding img ').addClass('logo-in');
                 }, 1000);
-
+                setTimeout(function () {
+                    $('.section-0 span').addClass('intro-in');
+                }, 1300);
                 setTimeout(function () {
                     $('.toggle-line').addClass('toggle-line-in');
 
                     $('.vertical-projects').addClass('vertical-init')
                 }, 1500);
-
 
 
                 /* Vertical Opening */
@@ -2527,8 +2537,6 @@
 
     });
     ///////////////////////////////////////////// Site Scripts /////////////////////////////////////////////
-
-
 
 
 })(jQuery);

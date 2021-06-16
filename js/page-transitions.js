@@ -2330,7 +2330,7 @@ $(function () {
                         });
 
                         window.verticalScroll = verticalScroll;
-
+                      
                     }, 250);
 
                     setTimeout(function () {
@@ -2342,6 +2342,7 @@ $(function () {
 
                         $('.vertical-projects').addClass('vertical-init')
                     }, 1500);
+
 
 
                 }
@@ -2460,6 +2461,5 @@ $(function () {
         var href = $(this).attr('href');
         content.load(href);
     });
-
 
 });
