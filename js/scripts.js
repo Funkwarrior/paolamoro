@@ -1260,11 +1260,12 @@
 
                     window.verticalScroll = verticalScroll;
                     verticalScroll.on("call", (obj, func, dir) => {
-                        console.log(dir);
                         if (obj == "on") {
                             $('.dark-logo').css('display', 'none');
                             $('.light-logo').css('display', 'block');
-                        }else{
+                            $('#rondella').addClass('rondella-init');
+                        }
+                        if (obj == "off"){
                             $('.dark-logo').css('display', 'block');
                             $('.light-logo').css('display', 'none');  
                         }
@@ -1275,7 +1276,7 @@
                     $('.site-branding img ').addClass('logo-in');
                 }, 1000);
                 setTimeout(function () {
-                    $('.section-0 span').addClass('intro-in');
+                    $('.section-0>div').addClass('intro-in');
                 }, 1300);
                 setTimeout(function () {
                     $('.toggle-line').addClass('toggle-line-in');

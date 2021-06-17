@@ -6,10 +6,6 @@ body,
     background-color: white;
 }
 
-.cygni-horizontal-titles .title {
-    /*  font-family: 'Bodoni Moda', serif; */
-}
-
 .project-title,
 .vertical-item-title {
     font-family: 'Bodoni Moda', serif;
@@ -170,13 +166,15 @@ h3 {
     position: relative;
     display: table-cell;
     vertical-align: middle;
+    margin: auto;
+    width: 100vw;
 }
 
 
-.section-0 span {
-    -webkit-transform: translatey(-100%);
-    -ms-transform: translatey(-100%);
-    transform: translatey(-100%);
+.section-0 div {
+    -webkit-transform: translatey(-20%);
+    -ms-transform: translatey(-20%);
+    transform: translatey(-20%);
     -webkit-transition: all 1.6s cubic-bezier(0.42, 0.4, 0.26, 1.01);
     -o-transition: all 1.6s cubic-bezier(0.42, 0.4, 0.26, 1.01);
     transition: all 1.6s cubic-bezier(0.42, 0.4, 0.26, 1.01);
@@ -188,7 +186,7 @@ h3 {
 
 }
 
-.section-0 span.intro-in {
+.section-0 div.intro-in {
     -webkit-transform: none;
     -ms-transform: none;
     transform: none;
@@ -254,14 +252,41 @@ h3 {
     padding-top: -5vh;
 }
 
-
+.section-2 {
+    margin-bottom: 300px;
+}
 
 .section-3 {
     font-family: 'Bodoni Moda', serif;
 
 }
-
+.section-3.section.has-bg {
+    margin-top: 50px;
+}
 .section-3 h3 {
     font-size: 55px;
     color: #FFF;
+}
+
+#rondella {
+    -webkit-transform: translatey(-10%) rotateY(40deg);
+    -ms-transform: translatey(-10%) rotateY(40deg);
+    transform: translatey(-10%) rotateY(40deg);
+    -webkit-transition: all 5s cubic-bezier(0.42, 0.4, 0.26, 1.01);
+    -o-transition: all 5s cubic-bezier(0.42, 0.4, 0.26, 1.01);
+    transition: all 5s cubic-bezier(0.42, 0.4, 0.26, 1.01);
+    -webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+    opacity: 0;
+    visibility: hidden;
+
+}
+
+#rondella.rondella-init {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    opacity: 1;
+    visibility: visible;
 }
