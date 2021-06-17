@@ -572,7 +572,7 @@
                 allImages.removeClass('active');
 
             })
-            
+
 
 
             loadingAn.finished.then(function () {
@@ -1267,7 +1267,7 @@
                         }
                         if (obj == "off"){
                             $('.dark-logo').css('display', 'block');
-                            $('.light-logo').css('display', 'none');  
+                            $('.light-logo').css('display', 'none');
                         }
                     });
                 }, 250);
@@ -2391,12 +2391,14 @@
         /* Image Carousel */
         if ($('.pe-carousel').length > 0) {
             var peCarousel = new Swiper('.pe-carousel', {
-                centeredSlides: true,
-                slidesPerView: 2,
-                spaceBetween: 50,
-                speed: 1500,
-                grabCursor: true
-
+                centeredSlides: false,
+                slidesPerView: 6,
+                spaceBetween: 10,
+                speed: 200,
+                grabCursor: true,
+                autoHeight:true,
+                loop:true,
+                autoplay:true
             });
         }
         /* Image Carousel */
