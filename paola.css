@@ -123,7 +123,9 @@ body,
 .white {
     color: white !important;
 }
-
+.black-bg {
+    background-color: black !important;
+}
 h3 {
     font-weight: 400;
 }
