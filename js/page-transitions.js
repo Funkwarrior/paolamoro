@@ -164,7 +164,7 @@ $(function () {
 
 
                         } else if (dataLayout === "light") {
-                            body.css('background', '#ededed');
+                            body.css('background', '#ffffff');
 
                         } else if (dataLayout === "dark") {
                             body.css('background', '#121212');
