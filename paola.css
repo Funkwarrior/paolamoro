@@ -3,7 +3,7 @@
 body,
 .pi-ov,
 .np-ov {
-    background-color: white;
+    background-color: white !important;
 }
 
 .project-title,
