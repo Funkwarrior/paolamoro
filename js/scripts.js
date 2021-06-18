@@ -2394,11 +2394,16 @@
                 centeredSlides: false,
                 slidesPerView: 6,
                 spaceBetween: 10,
-                speed: 200,
+                speed: 4000,
                 grabCursor: true,
                 autoHeight:true,
                 loop:true,
-                autoplay:true
+                freeMode: true,
+                freeModeSticky: false,
+                autoplay: {
+                    delay: 0,
+                    disableOnInteraction: false
+                }
             });
         }
         /* Image Carousel */
