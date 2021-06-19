@@ -1811,16 +1811,21 @@ $(function () {
                         /* Image Wrapper */
 
                         /* Image Carousel */
-                        if ($('.pe-carousel').length > 0) {
-                            var peCarousel = new Swiper('.pe-carousel', {
-                                centeredSlides: true,
-                                slidesPerView: 2,
-                                spaceBetween: 50,
-                                speed: 1500,
-                                grabCursor: true
-
-                            });
-                        }
+                        var peCarousel = new Swiper('.pe-carousel', {
+                            centeredSlides: false,
+                            slidesPerView: 6,
+                            spaceBetween: 10,
+                            speed: 4000,
+                            grabCursor: true,
+                            autoHeight:true,
+                            loop:true,
+                            freeMode: true,
+                            freeModeSticky: false,
+                            autoplay: {
+                                delay: 0,
+                                disableOnInteraction: false
+                            }
+                        });
                         /* Image Carousel */
 
                         /* Accordion */
