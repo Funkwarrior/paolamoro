@@ -327,3 +327,12 @@ margin-top: 10vw;
 .allusioni .swiper-wrapper {
     transition-timing-function: cubic-bezier(0.250, 0.250, 0.750, 0.750); /* linear */
 }
+
+.np-p {
+    font-size: 15px;
+}
+.np-title {
+    font-family: 'Bodoni Moda', serif;
+    font-size: 25px;
+    font-weight: 200;
+}
