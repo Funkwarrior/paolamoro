@@ -353,3 +353,10 @@ h1.big-title {
 a.underline:hover {
     color: #FFF;
 }
+
+
+element.style {
+}
+.layout-dark .footer-ov {
+    background: #121212;
+}
