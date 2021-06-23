@@ -350,7 +350,7 @@ h1.big-title {
     background: #000000;
 }
 
-a.underline:hover {
+body.layout-dark a.underline:hover {
     color: #FFF;
 }
 
