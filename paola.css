@@ -286,9 +286,9 @@ h3 {
     -webkit-transform: translatey(-10%) rotateY(40deg);
     -ms-transform: translatey(-10%) rotateY(40deg);
     transform: translatey(-10%) rotateY(40deg);
-    -webkit-transition: all 5s cubic-bezier(0.42, 0.4, 0.26, 1.01);
-    -o-transition: all 5s cubic-bezier(0.42, 0.4, 0.26, 1.01);
-    transition: all 5s cubic-bezier(0.42, 0.4, 0.26, 1.01);
+    -webkit-transition: all 2.5s cubic-bezier(0.42, 0.4, 0.26, 1.01);
+    -o-transition: all 2.5s cubic-bezier(0.42, 0.4, 0.26, 1.01);
+    transition: all 2.5s cubic-bezier(0.42, 0.4, 0.26, 1.01);
     -webkit-transform-origin: 0 0;
     -ms-transform-origin: 0 0;
     transform-origin: 0 0;
