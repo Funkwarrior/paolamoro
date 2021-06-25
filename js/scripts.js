@@ -39,7 +39,7 @@
     var pageSettings = $('.page-settings');
 
     var dataLayout = pageSettings.data('layout');
-
+    
     if (dataLayout != null) {
         var siteLayout = 'layout-' + dataLayout;
 

@@ -118,14 +118,14 @@ $(function () {
                         var body = $('body');
                         var pageSettings = $('.page-settings');
 
-                        pageSettings.addClass('cako')
+                        pageSettings.addClass('cako');
 
                         var dataLayout = pageSettings.data('layout');
 
                         if (dataLayout != null) {
                             var siteLayout = 'layout-' + dataLayout;
-
-                            body.addClass(siteLayout)
+                            body.removeClass();
+                            body.addClass(siteLayout);
                         }
 
                         var dataHeaderStyle = pageSettings.data('header-style');
