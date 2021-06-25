@@ -13,11 +13,25 @@ body.layout-light .np-ov {
     font-family: 'Bodoni Moda', serif;
     font-weight: 200;
 }
-
+.project-title {
+    font-size: 7vw;
+    line-height: 8vw;
+}
+.project-work {
+    font-size: 1vw;
+}
 .layout-dark .project-title {
     color: white;
 }
-
+h3 {
+    font-size: 2.5vw;
+    line-height: 4.5vw;
+    font-weight: 400;
+}
+p.big-p {
+    font-size: 2vw;
+    line-height: 4vw;
+}
 .project-top {
     top: 60%;
     max-width: inherit;
@@ -31,11 +45,6 @@ body.layout-light .np-ov {
     top: 80%;
     font-weight: 200;
     font-size: 20px;
-    /*
-    max-width: 60vw;
-    right: inherit;
-    left: 20%;
-    */
 }
 
 .project-summary-paola {
@@ -47,11 +56,9 @@ body.layout-light .np-ov {
 }
 
 .vertical-item-title {
-    /*  font-family: 'Bodoni Moda', serif;*/
-    font-size: 75px;
+    font-size: 4vw;
     font-weight: 400;
-    line-height: 100px;
-
+    line-height: 5vw;
 }
 
 .menu>li>a {
@@ -102,32 +109,11 @@ body.layout-light .np-ov {
     margin-right: calc(50% - 50vw);
 }
 
-/*
-    .pi-ov-in.pi-ov-1 {
-        height: 0%
-    }
-
-    .pi-ov-in.pi-ov-2 {
-        height: 0%
-    }
-
-    .pi-ov-in.pi-ov-3 {
-        height: 0%
-    }
-
-    .pi-ov-in.pi-ov-4 {
-        height: 0%
-    }
-*/
-
 .white {
     color: white !important;
 }
 .black-bg {
     background-color: black !important;
-}
-h3 {
-    font-weight: 400;
 }
 
 .next-project-image-wrapper {
@@ -201,17 +187,17 @@ h3 {
 
 .section-0 p,
 .section-2 h3 {
-    font-size: 3vw;
+    font-size: 7vw;
     font-family: 'Bodoni Moda', serif;
-    line-height: 4vw;
+    line-height: 9vw;
     text-align: center;
     color:#6D6D6D;
 }
 .section-2 h4 {
   margin-top: 5vw;
-    font-size: 2vw;
+    font-size: 5vw;
     font-family: 'Bodoni Moda', serif;
-    line-height: 2vw;
+    line-height: 7vw;
     text-align: center;
     color: #000;
     font-weight: normal;
@@ -309,9 +295,6 @@ h3 {
 margin-top: 10vw;
 }
 
-.project-header {
-    margin-bottom: 270px;
-}
 .intro-image-wrapper.has-animation.slide-bottom img {
     -webkit-transform: scale(1.1) translateY(10%);
     -ms-transform: scale(1.1) translateY(10%);
@@ -354,9 +337,15 @@ body.layout-dark a.underline:hover {
     color: #FFF;
 }
 
-
-element.style {
-}
 .layout-dark .footer-ov {
     background: #121212;
+}
+@media only screen and (max-width: 1600px) {
+
+}
+@media only screen and (max-width: 850px) {
+
+}
+
+@media only screen and (max-width: 576px) {
 }

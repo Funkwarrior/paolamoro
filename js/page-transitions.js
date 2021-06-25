@@ -2335,7 +2335,25 @@ $(function () {
                         });
 
                         window.verticalScroll = verticalScroll;
-                      
+                        verticalScroll.on('scroll', (position, limit, speed, direction) => {
+                        
+                            console.log(position);
+                       });
+                    verticalScroll.on("call", (obj, func, dir) => {
+                        if (obj == "on") {
+                            console.log("transitions on");
+
+                            $('.dark-logo').css('display', 'none');
+                            $('.light-logo').css('display', 'block');
+                            $('#rondella').addClass('rondella-init');
+                        }
+                        if (obj == "off"){
+                            console.log("transitions off");
+
+                            $('.dark-logo').css('display', 'block');
+                            $('.light-logo').css('display', 'none');
+                        }
+                    });
                     }, 250);
 
                     setTimeout(function () {

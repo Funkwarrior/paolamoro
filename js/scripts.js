@@ -1256,20 +1256,26 @@
                         el: document.querySelector('.vertical-projects'),
                         smooth: true,
                         offset: ['10%', 0],
+                        getDirection: true
                     });
 
                     window.verticalScroll = verticalScroll;
-                    verticalScroll.on("call", (obj, func, dir) => {
-                        if (obj == "on") {
+                    verticalScroll.on('scroll', (position, limit, speed, direction) => {
+                        
+                        var sss_pos = $('.section-3').offset().top;
+                        var sss_height = $('.section-3').outerHeight();
+                        var brand_pos = $('.site-branding').offset().top;
+                        var brand_height = $('.site-branding').outerHeight();
+                       
+                        if ((sss_pos<(brand_pos+brand_height)) && (sss_pos+sss_height) > (brand_pos+brand_height)){
                             $('.dark-logo').css('display', 'none');
                             $('.light-logo').css('display', 'block');
                             $('#rondella').addClass('rondella-init');
-                        }
-                        if (obj == "off"){
+                        }else{
                             $('.dark-logo').css('display', 'block');
                             $('.light-logo').css('display', 'none');
                         }
-                    });
+                   });
                 }, 250);
 
                 setTimeout(function () {
