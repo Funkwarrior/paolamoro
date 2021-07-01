@@ -39,7 +39,7 @@
     var pageSettings = $('.page-settings');
 
     var dataLayout = pageSettings.data('layout');
-    
+
     if (dataLayout != null) {
         var siteLayout = 'layout-' + dataLayout;
 
@@ -1261,21 +1261,21 @@
 
                     window.verticalScroll = verticalScroll;
                     verticalScroll.on('scroll', (position, limit, speed, direction) => {
-                        
+
                         var sss_pos = $('.section-3').offset().top;
                         var sss_height = $('.section-3').outerHeight();
                         var brand_pos = $('.site-branding').offset().top;
                         var brand_height = $('.site-branding').outerHeight();
-                       
-                        if ((sss_pos<(brand_pos+brand_height)) && (sss_pos+sss_height) > (brand_pos+brand_height)){
+
+                        if ((sss_pos < (brand_pos + brand_height)) && (sss_pos + sss_height) > (brand_pos + brand_height)) {
                             $('.dark-logo').css('display', 'none');
                             $('.light-logo').css('display', 'block');
                             $('#rondella').addClass('rondella-init');
-                        }else{
+                        } else {
                             $('.dark-logo').css('display', 'block');
                             $('.light-logo').css('display', 'none');
                         }
-                   });
+                    });
                 }, 250);
 
                 setTimeout(function () {
@@ -2216,13 +2216,13 @@
 
             const cVideo = new Plyr('.pe-video', {
                 controls: ["play-large",
-                            "play",
-                            "progress",
-                            "duration",
-                            "mute",
-                            "volume",
-                            "fullscreen"
-                        ],
+                    "play",
+                    "progress",
+                    "duration",
+                    "mute",
+                    "volume",
+                    "fullscreen"
+                ],
                 autoplay: true,
                 muted: true,
                 volume: 0,
@@ -2249,13 +2249,13 @@
 
             const cVideo2 = new Plyr('.pe-video-2', {
                 controls: ["play-large",
-                            "play",
-                            "progress",
-                            "duration",
-                            "mute",
-                            "volume",
-                            "fullscreen"
-                        ],
+                    "play",
+                    "progress",
+                    "duration",
+                    "mute",
+                    "volume",
+                    "fullscreen"
+                ],
 
             });
 
@@ -2398,17 +2398,35 @@
         if ($('.pe-carousel').length > 0) {
             var peCarousel = new Swiper('.pe-carousel', {
                 centeredSlides: false,
-                slidesPerView: 6,
+                slidesPerView: 'auto',
                 spaceBetween: 10,
                 speed: 4000,
                 grabCursor: true,
-                autoHeight:true,
-                loop:true,
+                autoHeight: false,
+                loop: true,
                 freeMode: true,
                 freeModeSticky: false,
                 autoplay: {
                     delay: 0,
                     disableOnInteraction: false
+                },
+                breakpoints: {
+                      // when window width is >= 100px
+                      100: {
+                        slidesPerView: 2
+                    },
+                    // when window width is >= 576px
+                    576: {
+                        slidesPerView: 4
+                    },
+                    // when window width is >= 850px
+                    850: {
+                        slidesPerView: 5
+                    },
+                    // when window width is >= 1600px
+                    1600: {
+                        slidesPerView: 7
+                    },
                 }
             });
         }

@@ -1632,13 +1632,13 @@ $(function () {
 
                             const cVideo = new Plyr('.pe-video', {
                                 controls: ["play-large",
-                            "play",
-                            "progress",
-                            "duration",
-                            "mute",
-                            "volume",
-                            "fullscreen"
-                        ],
+                                    "play",
+                                    "progress",
+                                    "duration",
+                                    "mute",
+                                    "volume",
+                                    "fullscreen"
+                                ],
                                 autoplay: true,
                                 muted: true,
                                 volume: 0,
@@ -1665,13 +1665,13 @@ $(function () {
 
                             const cVideo2 = new Plyr('.pe-video-2', {
                                 controls: ["play-large",
-                            "play",
-                            "progress",
-                            "duration",
-                            "mute",
-                            "volume",
-                            "fullscreen"
-                        ],
+                                    "play",
+                                    "progress",
+                                    "duration",
+                                    "mute",
+                                    "volume",
+                                    "fullscreen"
+                                ],
 
                             });
 
@@ -1811,21 +1811,41 @@ $(function () {
                         /* Image Wrapper */
 
                         /* Image Carousel */
-                        var peCarousel = new Swiper('.pe-carousel', {
-                            centeredSlides: false,
-                            slidesPerView: 6,
-                            spaceBetween: 10,
-                            speed: 4000,
-                            grabCursor: true,
-                            autoHeight:true,
-                            loop:true,
-                            freeMode: true,
-                            freeModeSticky: false,
-                            autoplay: {
-                                delay: 0,
-                                disableOnInteraction: false
-                            }
-                        });
+                        if ($('.pe-carousel').length > 0) {
+                            var peCarousel = new Swiper('.pe-carousel', {
+                                centeredSlides: false,
+                                slidesPerView: 'auto',
+                                spaceBetween: 10,
+                                speed: 4000,
+                                grabCursor: true,
+                                autoHeight: false,
+                                loop: true,
+                                freeMode: true,
+                                freeModeSticky: false,
+                                autoplay: {
+                                    delay: 0,
+                                    disableOnInteraction: false
+                                },
+                                breakpoints: {
+                                    // when window width is >= 100px
+                                    100: {
+                                        slidesPerView: 2
+                                    },
+                                    // when window width is >= 576px
+                                    576: {
+                                        slidesPerView: 4
+                                    },
+                                    // when window width is >= 850px
+                                    850: {
+                                        slidesPerView: 5
+                                    },
+                                    // when window width is >= 1600px
+                                    1600: {
+                                        slidesPerView: 7
+                                    },
+                                }
+                            });
+                        }
                         /* Image Carousel */
 
                         /* Accordion */
@@ -2336,24 +2356,24 @@ $(function () {
 
                         window.verticalScroll = verticalScroll;
                         verticalScroll.on('scroll', (position, limit, speed, direction) => {
-                        
+
                             console.log(position);
-                       });
-                    verticalScroll.on("call", (obj, func, dir) => {
-                        if (obj == "on") {
-                            console.log("transitions on");
+                        });
+                        verticalScroll.on("call", (obj, func, dir) => {
+                            if (obj == "on") {
+                                console.log("transitions on");
 
-                            $('.dark-logo').css('display', 'none');
-                            $('.light-logo').css('display', 'block');
-                            $('#rondella').addClass('rondella-init');
-                        }
-                        if (obj == "off"){
-                            console.log("transitions off");
+                                $('.dark-logo').css('display', 'none');
+                                $('.light-logo').css('display', 'block');
+                                $('#rondella').addClass('rondella-init');
+                            }
+                            if (obj == "off") {
+                                console.log("transitions off");
 
-                            $('.dark-logo').css('display', 'block');
-                            $('.light-logo').css('display', 'none');
-                        }
-                    });
+                                $('.dark-logo').css('display', 'block');
+                                $('.light-logo').css('display', 'none');
+                            }
+                        });
                     }, 250);
 
                     setTimeout(function () {
@@ -2421,10 +2441,10 @@ $(function () {
 
                 }
                 /* Project Page Opening */
-                
-                
+
+
                 /* List V2 Opening */
-                
+
                 if ($('.list-v2').length > 0) {
 
                     setTimeout(function () {
