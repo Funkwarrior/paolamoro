@@ -2351,7 +2351,7 @@ $(function () {
                         var verticalScroll = new LocomotiveScroll({
                             el: document.querySelector('.vertical-projects'),
                             smooth: true,
-                            offset: ['10%', 0],
+                            offset: ['25%', 0],
                         });
 
                         window.verticalScroll = verticalScroll;

@@ -1255,7 +1255,7 @@
                     var verticalScroll = new LocomotiveScroll({
                         el: document.querySelector('.vertical-projects'),
                         smooth: true,
-                        offset: ['10%', 0],
+                        offset: ['25%', 0],
                         getDirection: true
                     });
 
@@ -1271,6 +1271,9 @@
                             $('.dark-logo').css('display', 'none');
                             $('.light-logo').css('display', 'block');
                             $('#rondella').addClass('rondella-init');
+                            $('h3.scarti').addClass('init');
+                            $('h3.segni').addClass('init');
+                            $('h3.sogni').addClass('init');
                         } else {
                             $('.dark-logo').css('display', 'block');
                             $('.light-logo').css('display', 'none');
@@ -1286,7 +1289,6 @@
                 }, 1300);
                 setTimeout(function () {
                     $('.toggle-line').addClass('toggle-line-in');
-
                     $('.vertical-projects').addClass('vertical-init')
                 }, 1500);
 

@@ -140,7 +140,7 @@ p.big-p {
 }
 
 .vertical-item:nth-child(even) .vertical-item-meta {
-    right: 55%;
+    right: 50%;
 }
 
 .vertical-item-link {
@@ -187,21 +187,18 @@ p.big-p {
 }
 
 .section-0 p,
-.section-2 h3 {
-    font-size: 7vw;
+.section-2 h3,
+.section-2 h4 {
+    font-size: 50px;
     font-family: 'Bodoni Moda', serif;
-    line-height: 9vw;
+    line-height: 160%;
     text-align: center;
     color: #6D6D6D;
 }
 
 .section-2 h4 {
     margin-top: 5vw;
-    font-size: 5vw;
-    font-family: 'Bodoni Moda', serif;
-    line-height: 7vw;
-    text-align: center;
-    color: #000;
+    color: black;
     font-weight: normal;
 }
 
@@ -219,9 +216,30 @@ p.big-p {
 
 }
 
+
 .section-1 .intro-image-wrapper {
     display: block;
     position: relative;
+
+    -webkit-transform: translatey(20%);
+    -ms-transform: translatey(20%);
+    transform: translatey(20%);
+    -webkit-transition: all 1.6s cubic-bezier(0.42, 0.4, 0.26, 1.01);
+    -o-transition: all 1.6s cubic-bezier(0.42, 0.4, 0.26, 1.01);
+    transition: all 1.6s cubic-bezier(0.42, 0.4, 0.26, 1.01);
+    -webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.section-1 .intro-image-wrapper.is-inview {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    opacity: 1;
+    visibility: visible;
 }
 
 .section-1 .images-container img {
@@ -260,7 +278,7 @@ p.big-p {
 
 .section-3 {
     font-family: 'Bodoni Moda', serif;
-
+    position: relative;
 }
 
 .section-3.section.has-bg {
@@ -284,7 +302,8 @@ p.big-p {
     transform-origin: 0 0;
     opacity: 0;
     visibility: hidden;
-
+    width: 450px;
+    margin: auto;
 }
 
 #rondella.rondella-init {
@@ -295,11 +314,57 @@ p.big-p {
     visibility: visible;
 }
 
+#sss{
+    position: absolute;
+    right: 5%;
+    top:10%;
+}
+
+h3.scarti, h3.segni, h3.sogni{
+    -webkit-transform: translatex(30%);
+    -ms-transform: translatex(30%);
+    transform: translatex(30%);
+    -webkit-transition: all 2.5s cubic-bezier(0.42, 0.4, 0.26, 1.01);
+    -o-transition: all 2.5s cubic-bezier(0.42, 0.4, 0.26, 1.01);
+    transition: all 2.5s cubic-bezier(0.42, 0.4, 0.26, 1.01);
+    -webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+    opacity: 0;
+    visibility: hidden;
+}
+h3.scarti.init, h3.segni.init, h3.sogni.init{
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    opacity: 1;
+    visibility: visible;
+}
+
+h3.scarti{
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+}
+h3.segni{
+    -webkit-transition-duration: 1.7s;
+    -moz-transition-duration: 1.7s;
+    -o-transition-duration: 1.7s;
+    transition-duration: 1.7s;
+}
+h3.sogni{
+    -webkit-transition-duration: 2.5s;
+    -moz-transition-duration: 2.5s;
+    -o-transition-duration: 2.5s;
+    transition-duration: 2.5s;
+}
 .allusioni.pe-carousel {
     margin-top: 10vw;
     max-height: unset;
     height: 100%;
 }
+
 .allusioni .pe-carousel-item {
     width: 100%;
     height: 100%;
@@ -307,10 +372,11 @@ p.big-p {
     object-fit: unset;
 }
 
-.allusioni .pe-carousel-item img{
+.allusioni .pe-carousel-item img {
     width: 100%;
     height: 100%;
 }
+
 .intro-image-wrapper.has-animation.slide-bottom img {
     -webkit-transform: scale(1.1) translateY(10%);
     -ms-transform: scale(1.1) translateY(10%);
@@ -364,10 +430,12 @@ body.layout-dark a.underline:hover {
     .project-title {
         font-size: 80px;
     }
+
     h3 {
         font-size: 30px;
-     }
-     .project-work {
+    }
+
+    .project-work {
         font-size: 12px;
     }
 }
@@ -376,20 +444,66 @@ body.layout-dark a.underline:hover {
     .project-image img {
         object-position: 65% 0;
     }
+
     .project-top {
         margin-top: 80px;
     }
-    .project-summary-paola{
+
+    .project-summary-paola {
         margin-top: 30px;
     }
+
     .project-title {
         font-size: 50px;
     }
+
     h3 {
         font-size: 25px;
-     }
-     .project-work {
+    }
+
+    .project-work {
         font-size: 12px;
+    }
+
+    .section-2 .wrapper {
+        max-width: 90%;
+    }
+
+    .section-0 p,
+    .section-2 h3,
+    .section-2 h4 {
+        font-size: 35px;
+    }
+
+    .vertical-image-wrapper {
+        width: 100%;
+        margin: unset;
+    }
+
+    .vertical-item-meta {
+        width: 100%;
+        left: 0;
+        top: 100%;
+        text-align: center !important;
+    }
+
+    .vertical-item {
+        margin-bottom: 200px;
+    }
+
+    .vertical-item:nth-child(even) .vertical-item-meta {
+        right: unset;
+    }
+
+    .vertical-item-title div .title-line {
+        -webkit-transform: translatey(20%);
+        -ms-transform: translatey(20%);
+        transform: translatey(20%);
+    }
+    .vertical-item:nth-child(even) .vertical-item-meta {
+        left: unset;
+        right: unset;
+        text-align: center;
     }
 }
 
@@ -397,13 +511,22 @@ body.layout-dark a.underline:hover {
     .project-image img {
         object-position: 65% 0;
     }
+
     .project-title {
         font-size: 35px;
     }
+
     h3 {
         font-size: 21px;
-     }
-     .project-work {
+    }
+
+    .project-work {
         font-size: 10px;
+    }
+
+    .section-0 p,
+    .section-2 h3,
+    .section-2 h4 {
+        font-size: 25px;
     }
 }
