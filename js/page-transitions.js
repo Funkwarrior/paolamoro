@@ -2354,24 +2354,34 @@ $(function () {
                             offset: ['25%', 0],
                         });
 
-                        window.verticalScroll = verticalScroll;
                         verticalScroll.on('scroll', (position, limit, speed, direction) => {
 
-                            console.log(position);
-                        });
-                        verticalScroll.on("call", (obj, func, dir) => {
-                            if (obj == "on") {
-                                console.log("transitions on");
-
-                                $('.dark-logo').css('display', 'none');
-                                $('.light-logo').css('display', 'block');
-                                $('#rondella').addClass('rondella-init');
-                            }
-                            if (obj == "off") {
-                                console.log("transitions off");
-
-                                $('.dark-logo').css('display', 'block');
-                                $('.light-logo').css('display', 'none');
+                            var sss_block = $('.section-3').position().top;
+                            var sss_height = $('.section-3').outerHeight();
+                            var gap = $('.site-branding').offset().top + $('.site-branding').outerHeight();
+                            
+                            if ($(window).width() > 850) {
+                                if (position.scroll.y > (sss_block-gap) && position.scroll.y < (sss_block+sss_height-gap)) {
+                                    $('.dark-logo').css('display', 'none');
+                                    $('.light-logo').css('display', 'block');
+                                    $('#rondella').addClass('rondella-init');
+                                    $('h3.scarti').addClass('init');
+                                    $('h3.segni').addClass('init');
+                                    $('h3.sogni').addClass('init');
+                                } else {
+                                    $('.dark-logo').css('display', 'block');
+                                    $('.light-logo').css('display', 'none');
+                                }
+                            }else{
+                                if (position.scroll.y > sss_block && position.scroll.y < (sss_block+sss_height)) {
+                                    $('#rondella').addClass('rondella-init');
+                                    $('h3.scarti').addClass('init');
+                                    $('h3.segni').addClass('init');
+                                    $('h3.sogni').addClass('init');
+                                } else {
+                                    $('.dark-logo').css('display', 'block');
+                                    $('.light-logo').css('display', 'none');
+                                }
                             }
                         });
                     }, 250);

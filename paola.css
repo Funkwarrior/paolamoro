@@ -91,7 +91,9 @@ p.big-p {
     width: 55%;
     left: 50%;
 }
-
+div.intro{
+    position: relative;
+}
 #intro01 {
     background-color: black;
     height: 100%;
@@ -314,13 +316,15 @@ p.big-p {
     visibility: visible;
 }
 
-#sss{
+#sss {
     position: absolute;
     right: 5%;
-    top:10%;
+    top: 10%;
 }
 
-h3.scarti, h3.segni, h3.sogni{
+h3.scarti,
+h3.segni,
+h3.sogni {
     -webkit-transform: translatex(30%);
     -ms-transform: translatex(30%);
     transform: translatex(30%);
@@ -333,7 +337,10 @@ h3.scarti, h3.segni, h3.sogni{
     opacity: 0;
     visibility: hidden;
 }
-h3.scarti.init, h3.segni.init, h3.sogni.init{
+
+h3.scarti.init,
+h3.segni.init,
+h3.sogni.init {
     -webkit-transform: none;
     -ms-transform: none;
     transform: none;
@@ -341,24 +348,27 @@ h3.scarti.init, h3.segni.init, h3.sogni.init{
     visibility: visible;
 }
 
-h3.scarti{
+h3.scarti {
     -webkit-transition-duration: 1s;
     -moz-transition-duration: 1s;
     -o-transition-duration: 1s;
     transition-duration: 1s;
 }
-h3.segni{
+
+h3.segni {
     -webkit-transition-duration: 1.7s;
     -moz-transition-duration: 1.7s;
     -o-transition-duration: 1.7s;
     transition-duration: 1.7s;
 }
-h3.sogni{
+
+h3.sogni {
     -webkit-transition-duration: 2.5s;
     -moz-transition-duration: 2.5s;
     -o-transition-duration: 2.5s;
     transition-duration: 2.5s;
 }
+
 .allusioni.pe-carousel {
     margin-top: 10vw;
     max-height: unset;
@@ -425,6 +435,8 @@ body.layout-dark a.underline:hover {
     background: #121212;
 }
 
+
+
 @media only screen and (max-width: 1600px) {
 
     .project-title {
@@ -438,7 +450,32 @@ body.layout-dark a.underline:hover {
     .project-work {
         font-size: 12px;
     }
+    .menu > li > .sub-menu {
+
+        position: static;
+        width: 100%;
+        max-height: 0px;
+        -webkit-transition: all .6s ease;
+        -o-transition: all .6s ease;
+        transition: all .6s ease;
+        overflow: hidden;
+        display: block;
+
+    }
+    .menu > li > .sub-menu.sub-menu-in {
+        max-height: 385px;
+    }
+    .menu > li > .sub-menu > li {
+        padding-left: 0;
+        font-size: 25px;
+        line-height: 25px;
+    }
+    .menu > li > .sub-menu > li:first-child {
+        margin-top: 20px;
+    }
 }
+
+
 
 @media only screen and (max-width: 850px) {
     .project-image img {
@@ -500,10 +537,33 @@ body.layout-dark a.underline:hover {
         -ms-transform: translatey(20%);
         transform: translatey(20%);
     }
+
     .vertical-item:nth-child(even) .vertical-item-meta {
         left: unset;
         right: unset;
         text-align: center;
+    }
+
+    #rondella {
+        width: 350px;
+    }
+
+    h3.scarti,
+    h3.segni,
+    h3.sogni {
+        display: inline-block;
+        margin-right: 30px;
+    }
+
+    #sss {
+        margin: auto;
+        position: relative;
+        right: unset;
+        top: unset; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 30px;
     }
 }
 
@@ -518,6 +578,10 @@ body.layout-dark a.underline:hover {
 
     h3 {
         font-size: 21px;
+    }
+
+    #rondella {
+        width: 250px;
     }
 
     .project-work {

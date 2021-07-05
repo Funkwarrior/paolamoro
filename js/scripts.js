@@ -1262,21 +1262,32 @@
                     window.verticalScroll = verticalScroll;
                     verticalScroll.on('scroll', (position, limit, speed, direction) => {
 
-                        var sss_pos = $('.section-3').offset().top;
+                        var sss_block = $('.section-3').position().top;
                         var sss_height = $('.section-3').outerHeight();
-                        var brand_pos = $('.site-branding').offset().top;
-                        var brand_height = $('.site-branding').outerHeight();
-
-                        if ((sss_pos < (brand_pos + brand_height)) && (sss_pos + sss_height) > (brand_pos + brand_height)) {
-                            $('.dark-logo').css('display', 'none');
-                            $('.light-logo').css('display', 'block');
-                            $('#rondella').addClass('rondella-init');
-                            $('h3.scarti').addClass('init');
-                            $('h3.segni').addClass('init');
-                            $('h3.sogni').addClass('init');
-                        } else {
-                            $('.dark-logo').css('display', 'block');
-                            $('.light-logo').css('display', 'none');
+                        var gap = $('.site-branding').offset().top + $('.site-branding').outerHeight();
+                        
+                        if ($(window).width() > 850) {
+                            if (position.scroll.y > (sss_block-gap) && position.scroll.y < (sss_block+sss_height-gap)) {
+                                $('.dark-logo').css('display', 'none');
+                                $('.light-logo').css('display', 'block');
+                                $('#rondella').addClass('rondella-init');
+                                $('h3.scarti').addClass('init');
+                                $('h3.segni').addClass('init');
+                                $('h3.sogni').addClass('init');
+                            } else {
+                                $('.dark-logo').css('display', 'block');
+                                $('.light-logo').css('display', 'none');
+                            }
+                        }else{
+                            if (position.scroll.y > sss_block && position.scroll.y < (sss_block+sss_height)) {
+                                $('#rondella').addClass('rondella-init');
+                                $('h3.scarti').addClass('init');
+                                $('h3.segni').addClass('init');
+                                $('h3.sogni').addClass('init');
+                            } else {
+                                $('.dark-logo').css('display', 'block');
+                                $('.light-logo').css('display', 'none');
+                            }
                         }
                     });
                 }, 250);
@@ -2413,8 +2424,8 @@
                     disableOnInteraction: false
                 },
                 breakpoints: {
-                      // when window width is >= 100px
-                      100: {
+                    // when window width is >= 100px
+                    100: {
                         slidesPerView: 2
                     },
                     // when window width is >= 576px
