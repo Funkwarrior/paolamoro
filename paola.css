@@ -593,4 +593,9 @@ body.layout-dark a.underline:hover {
     .section-2 h4 {
         font-size: 25px;
     }
+    h3.scarti,
+    h3.segni,
+    h3.sogni {
+     font-size: 35px;
+    }
 }
