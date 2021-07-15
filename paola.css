@@ -60,9 +60,9 @@ p.big-p {
 }
 
 .vertical-item-title {
-    font-size: 4vw;
+    font-size: 60px;
     font-weight: 400;
-    line-height: 5vw;
+    line-height: 70px;
 }
 
 .menu>li>a {
@@ -434,7 +434,9 @@ body.layout-dark a.underline:hover {
 .layout-dark .footer-ov {
     background: #121212;
 }
-
+.vertical-projects {
+    padding-bottom: 0;
+}
 
 
 @media only screen and (max-width: 1600px) {
@@ -472,6 +474,10 @@ body.layout-dark a.underline:hover {
     }
     .menu > li > .sub-menu > li:first-child {
         margin-top: 20px;
+    }
+    .vertical-item-title {
+        font-size: 50px;
+        line-height: 70px;
     }
 }
 
@@ -522,6 +528,7 @@ body.layout-dark a.underline:hover {
         left: 0;
         top: 100%;
         text-align: center !important;
+    margin-top: 20px;
     }
 
     .vertical-item {
@@ -565,6 +572,13 @@ body.layout-dark a.underline:hover {
         align-items: center;
         padding-top: 30px;
     }
+    .vertical-item-title {
+        font-size: 40px;
+        line-height: 60px;
+    }
+    .section-0{
+        padding-bottom: 120px;
+    }
 }
 
 @media only screen and (max-width: 576px) {
@@ -597,5 +611,9 @@ body.layout-dark a.underline:hover {
     h3.segni,
     h3.sogni {
      font-size: 35px;
+    }
+    
+    .vertical-image-wrapper {
+        min-height: 325px;
     }
 }
