@@ -127,7 +127,7 @@ div.intro{
 
 .vertical-image-wrapper {
     width: 45%;
-    min-height: 350px;
+    min-height: unset;
 }
 
 .vertical-projects {
@@ -535,7 +535,7 @@ body.layout-dark a.underline:hover {
     }
 
     .vertical-item {
-        margin-bottom: 200px;
+        margin-bottom: 300px;
     }
 
     .vertical-item:nth-child(even) .vertical-item-meta {
@@ -576,8 +576,8 @@ body.layout-dark a.underline:hover {
         padding-top: 30px;
     }
     .vertical-item-title {
-        font-size: 40px;
-        line-height: 60px;
+        font-size: 8vw;
+        line-height: 12vw;
     }
     .section-0{
         padding-bottom: 120px;
@@ -617,6 +617,6 @@ body.layout-dark a.underline:hover {
     }
     
     .vertical-image-wrapper {
-        min-height: 325px;
+        min-height: unset;
     }
 }
