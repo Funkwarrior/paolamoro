@@ -582,6 +582,10 @@ body.layout-dark a.underline:hover {
     .section-0{
         padding-bottom: 120px;
     }
+    .menu > li > a {
+        font-size: 25px;
+        line-height: 40px;
+    }
 }
 
 @media only screen and (max-width: 576px) {
