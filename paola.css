@@ -91,9 +91,11 @@ p.big-p {
     width: 55%;
     left: 50%;
 }
-div.intro{
+
+div.intro {
     position: relative;
 }
+
 #intro01 {
     background-color: black;
     height: 100%;
@@ -139,6 +141,7 @@ div.intro{
     width: 65%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 100px;
 }
 
 .vertical-item:nth-child(even) .vertical-item-meta {
@@ -434,8 +437,13 @@ body.layout-dark a.underline:hover {
 .layout-dark .footer-ov {
     background: #121212;
 }
+
 .vertical-projects {
     padding-bottom: 0;
+}
+
+.site-footer {
+    margin-top: 150px;
 }
 
 .footer-ov {
@@ -455,7 +463,8 @@ body.layout-dark a.underline:hover {
     .project-work {
         font-size: 12px;
     }
-    .menu > li > .sub-menu {
+
+    .menu>li>.sub-menu {
 
         position: static;
         width: 100%;
@@ -467,17 +476,21 @@ body.layout-dark a.underline:hover {
         display: block;
 
     }
-    .menu > li > .sub-menu.sub-menu-in {
+
+    .menu>li>.sub-menu.sub-menu-in {
         max-height: 385px;
     }
-    .menu > li > .sub-menu > li {
+
+    .menu>li>.sub-menu>li {
         padding-left: 0;
         font-size: 25px;
         line-height: 25px;
     }
-    .menu > li > .sub-menu > li:first-child {
+
+    .menu>li>.sub-menu>li:first-child {
         margin-top: 20px;
     }
+
     .vertical-item-title {
         font-size: 50px;
         line-height: 70px;
@@ -531,7 +544,7 @@ body.layout-dark a.underline:hover {
         left: 0;
         top: 100%;
         text-align: center !important;
-    margin-top: 20px;
+        margin-top: 20px;
     }
 
     .vertical-item {
@@ -569,20 +582,23 @@ body.layout-dark a.underline:hover {
         margin: auto;
         position: relative;
         right: unset;
-        top: unset; 
+        top: unset;
         display: flex;
         justify-content: center;
         align-items: center;
         padding-top: 30px;
     }
+
     .vertical-item-title {
         font-size: 8vw;
         line-height: 12vw;
     }
-    .section-0{
+
+    .section-0 {
         padding-bottom: 120px;
     }
-    .menu > li > a {
+
+    .menu>li>a {
         font-size: 25px;
         line-height: 40px;
     }
@@ -614,12 +630,13 @@ body.layout-dark a.underline:hover {
     .section-2 h4 {
         font-size: 25px;
     }
+
     h3.scarti,
     h3.segni,
     h3.sogni {
-     font-size: 35px;
+        font-size: 35px;
     }
-    
+
     .vertical-image-wrapper {
         min-height: unset;
     }
