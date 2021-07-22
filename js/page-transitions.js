@@ -117,7 +117,7 @@ $(function () {
                         // Page Settings //
                         var body = $('body');
                         var pageSettings = $('.page-settings');
-
+console.log(pageSettings );
                         pageSettings.addClass('cako');
 
                         var dataLayout = pageSettings.data('layout');
