@@ -129,7 +129,7 @@ div.intro {
 
 .vertical-image-wrapper {
     width: 45%;
-    min-height: unset;
+    max-height: 550px;
 }
 
 .vertical-projects {
@@ -449,7 +449,17 @@ body.layout-dark a.underline:hover {
 .footer-ov {
     background: #f9f9f9a1;
 }
-
+.scartocolore .card-columns {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+}
+.scartocolore .card {
+    background-color: unset;
+    background-clip: border-box;
+    border: none;
+    border-radius: 0;
+}
 @media only screen and (max-width: 1600px) {
 
     .project-title {
@@ -636,8 +646,10 @@ body.layout-dark a.underline:hover {
     h3.sogni {
         font-size: 35px;
     }
-
-    .vertical-image-wrapper {
-        min-height: unset;
+    .scartocolore .card-columns {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
     }
+
 }
