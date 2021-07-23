@@ -460,6 +460,10 @@ body.layout-dark a.underline:hover {
     border: none;
     border-radius: 0;
 }
+
+.c-form {
+    background: #696868
+}
 @media only screen and (max-width: 1600px) {
 
     .project-title {

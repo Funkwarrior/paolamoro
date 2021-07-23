@@ -38,9 +38,10 @@ $(function () {
     ////////// Page Transitions Start //////////
 
     var options = {
-            blacklist: '.has-children a, .menu-widget-wrapper a',
+            blacklist: '.has-children a, .menu-widget-wrapper a .no-smoothState',
             prefetch: true,
             cacheLength: 0,
+            forms: 'form',
             onStart: {
                 duration: 2000, // Duration of our animation
                 render: function ($container) {
@@ -119,35 +120,30 @@ $(function () {
                         pageSettings.addClass('cako');
 
                         var dataLayout = pageSettings.data('layout');
-
                         if (dataLayout != null) {
                             var siteLayout = 'layout-' + dataLayout;
-                            body.removeClass();
-                            body.addClass(siteLayout);
+                            body.removeClass().addClass(siteLayout);
                         }
 
                         var dataHeaderStyle = pageSettings.data('header-style');
+
                         if (dataHeaderStyle != null) {
                             var headerStyle = 'header-style-' + dataLayout;
-
-                            $('.site-header').addClass(dataHeaderStyle)
+                            $('.site-header').removeClass("dark light").addClass(dataHeaderStyle)
                         }
 
                         var dataMenuStyle = pageSettings.data('menu-style');
 
                         if (dataMenuStyle != null) {
                             var menuStyle = 'menu-style-' + dataMenuStyle;
-
-                            $('.site-navigation').addClass(dataMenuStyle)
-
+                            $('.site-navigation').removeClass("dark light").addClass(dataMenuStyle)
                         }
 
                         var dataMenuLayout = pageSettings.data('menu-layout');
 
                         if (dataMenuLayout != null) {
                             var menuLayout = dataMenuLayout;
-
-                            $('.site-navigation').addClass(dataMenuLayout)
+                            $('.site-navigation').removeClass("dark light").addClass(dataMenuLayout)
 
                         }
 
