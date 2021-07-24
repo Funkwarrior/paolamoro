@@ -2337,7 +2337,7 @@ $(function () {
                 /* Filterable List Opening */
 
                 /* Vertical Opening */
-                if ($('.vertical-projects').length > 0) {
+                if (($('.vertical-projects').length > 0) && $('body.home').length) {
 
                     setTimeout(function () {
                         var verticalScroll = new LocomotiveScroll({
