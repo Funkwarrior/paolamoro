@@ -130,6 +130,8 @@ div.intro {
 .vertical-image-wrapper {
     width: 45%;
     max-height: 550px;
+    min-height: unset;
+
 }
 
 .vertical-projects {
