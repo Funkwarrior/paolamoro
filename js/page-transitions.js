@@ -126,6 +126,9 @@ $(function () {
                         }
 
                         var dataHeaderStyle = pageSettings.data('header-style');
+                        
+                        $('.dark-logo').removeAttr("style");
+                        $('.light-logo').removeAttr("style");
 
                         if (dataHeaderStyle != null) {
                             var headerStyle = 'header-style-' + dataLayout;
