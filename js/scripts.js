@@ -1268,11 +1268,11 @@
                         if ($('body.home').length) {
                             if ($(window).width() > 850) {
                                 if (position.scroll.y > (sss_block - gap) && position.scroll.y < (sss_block + sss_height - gap)) {
-                                    $('.dark-logo').css('display', 'none');
-                                    $('.light-logo').css('display', 'block');
+                                    $('.dark-logo').hide();
+                                    $('.light-logo').show();
                                 } else {
-                                    $('.dark-logo').css('display', 'block');
-                                    $('.light-logo').css('display', 'none');
+                                    $('.dark-logo').show();
+                                    $('.light-logo').hide();
                                 }
                                 if (position.scroll.y > (sss_block - gap - ($(window).height() / 2))) {
                                     $('#rondella').addClass('rondella-init');
@@ -1287,8 +1287,8 @@
                                     $('h3.segni').addClass('init');
                                     $('h3.sogni').addClass('init');
                                 } else {
-                                    $('.dark-logo').css('display', 'block');
-                                    $('.light-logo').css('display', 'none');
+                                    $('.dark-logo').hide();
+                                    $('.light-logo').show();
                                 }
                             }
                         }
