@@ -45,7 +45,9 @@
 
         body.addClass(siteLayout)
     }
-
+    $('.dark-logo').removeAttr("style");
+    $('.light-logo').removeAttr("style");
+    
     var dataHeaderStyle = pageSettings.data('header-style');
 
     if (dataHeaderStyle != null) {
