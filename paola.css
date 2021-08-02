@@ -309,7 +309,7 @@ div.intro {
     transform-origin: 0 0;
     opacity: 0;
     visibility: hidden;
-    width: 450px;
+    width: 400px;
     margin: auto;
 }
 
@@ -584,14 +584,14 @@ body.layout-dark a.underline:hover {
     }
 
     #rondella {
-        width: 350px;
+        width: 300px;
     }
 
     h3.scarti,
     h3.segni,
     h3.sogni {
         display: inline-block;
-        margin-right: 30px;
+        margin: 0 15px;
     }
 
     #sss {
@@ -611,12 +611,18 @@ body.layout-dark a.underline:hover {
     }
 
     .section-0 {
-        padding-bottom: 120px;
+        padding-bottom: 150px;
+        padding-top: 230px;
     }
 
     .menu>li>a {
         font-size: 25px;
         line-height: 40px;
+    }
+
+    .section.sfondo,
+    .section.sfondo .wrapper-small{
+      margin-bottom: 30px;
     }
 }
 
