@@ -611,10 +611,12 @@ body.layout-dark a.underline:hover {
     }
 
     .section-0 {
-        padding-bottom: 150px;
+        padding-bottom: 100px;
         padding-top: 230px;
     }
-
+    .section-2 {
+        margin-bottom: 200px;
+    }
     .menu>li>a {
         font-size: 25px;
         line-height: 40px;
