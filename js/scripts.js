@@ -47,7 +47,7 @@
     }
     $('.dark-logo').removeAttr("style");
     $('.light-logo').removeAttr("style");
-    
+
     var dataHeaderStyle = pageSettings.data('header-style');
 
     if (dataHeaderStyle != null) {
@@ -1288,9 +1288,11 @@
                                     $('h3.scarti').addClass('init');
                                     $('h3.segni').addClass('init');
                                     $('h3.sogni').addClass('init');
-                                } else {
                                     $('.dark-logo').hide();
                                     $('.light-logo').show();
+                                } else {
+                                    $('.dark-logo').show();
+                                    $('.light-logo').hide();
                                 }
                             }
                         }
