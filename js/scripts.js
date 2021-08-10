@@ -317,8 +317,12 @@
     $('.site-navigation .menu > li.menu-item.has-children').each(function () {
 
         $(this).prepend('<i class="sub-toggle  icon-plus"><i>');
-
     })
+
+    $('.has-children').on('click', function () {
+        $('.sub-toggle').toggleClass('st-active');
+        $('.sub-menu').toggleClass('sub-menu-in');
+    });
 
     $('.sub-toggle').on('click', function () {
 
