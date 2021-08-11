@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
 
 body.layout-light,
 body.layout-light .pi-ov,
@@ -11,7 +11,7 @@ body.layout-light .np-ov {
 .pe-single-post-title,
 .pe-single-post h4 {
   font-family: 'Bodoni Moda', serif;
-  font-weight: 200;
+  font-weight: 400;
 }
 
 .project-title {
@@ -287,7 +287,9 @@ div.intro {
   font-size: 55px;
   color: #FFF;
 }
-
+.image-wrapper {
+  height: 100%;
+}
 #rondella {
   -webkit-transform: translatey(-10%) rotateY(40deg);
   -ms-transform: translatey(-10%) rotateY(40deg);

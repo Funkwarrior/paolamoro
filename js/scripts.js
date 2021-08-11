@@ -401,7 +401,6 @@
     ///////////////////////////////////////////// Site Scripts /////////////////////////////////////////////
     $(window).on('load', function () {
 
-
         ////////// Page Loader /////////
 
         var loadingAn = anime({
@@ -2334,7 +2333,6 @@
                         })
 
                     } */
-
 
                 var imwDelay = $(this).data('delay');
 

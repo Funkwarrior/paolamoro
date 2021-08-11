@@ -49,7 +49,7 @@ $(function () {
 
                     $('.line').removeClass('line-arange');
 
-                    $('.loading-text').addClass('page-change')
+                    $('.loading-text').addClass('page-change');
 
                     if ($('.menu-toggle').hasClass('is-active')) {
                         ptText.restart();
@@ -91,6 +91,15 @@ $(function () {
                     smoothState.restartCSSAnimations();
                 }
             },
+            onProgress: {
+                // How long this animation takes
+                duration: 0,
+                // A function that dictates the animations that take place
+                render: function ($container) {
+                    
+
+                }
+              },
             onReady: {
 
                 duration: 0,
@@ -1693,7 +1702,6 @@ $(function () {
 
 
                                 var imImg = $(this).find('img');
-
                                 /*    if ($(this).hasClass('parallax-image')) {
                                         var piOffset = $(this).offset();
 
@@ -1724,7 +1732,6 @@ $(function () {
 
                                     } */
 
-
                                 var imwDelay = $(this).data('delay');
 
 
@@ -1732,7 +1739,6 @@ $(function () {
 
 
                                     var imwHeight = $(this).outerHeight();
-
 
 
                                     $(this).css({
@@ -1986,7 +1992,6 @@ $(function () {
                     });
                 }
             },
-
             onAfter: function ($container, $newContent) {
 
 
