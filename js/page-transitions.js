@@ -1738,7 +1738,6 @@ $(function () {
                                     var $parent = $(this);
 
                                     $(this).imagesLoaded().done(function() {
-                                       console.log("The image source loaded is "+imImg.attr('src')+"; height: " + imImg.height() + "px");
                                        var imwHeight = imImg.outerHeight();
                                        $parent.css({
                                            transitionDelay: '0s',
