@@ -1,9 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda&display=swap');
+
 @font-face {
   font-family: 'Archivo';
   src: url('css/webfonts/Archivo-VariableFont_wdth,wght.ttf') format('truetype');
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda&display=swap');
 
 body.layout-light,
 body.layout-light .pi-ov,
