@@ -3,15 +3,6 @@ Project:	Cygni - Scarti Segni Sogni - Good For Nothing
 Version:	2.0
 Last change:	27/08/2020
 -------------------------------------------------------------------*/
-@font-face {
-    font-family: 'Archivo';
-    src: url('css/webfonts/Archivo-VariableFont_wdth,wght.ttf') format('truetype');
-  }
-  
-  @font-face {
-    font-family: 'Bodoni Moda';
-    src: url('css/webfonts/BodoniModa-VariableFont_opsz,wght.ttf') format('truetype');
-  }
 
 html,
 body,
