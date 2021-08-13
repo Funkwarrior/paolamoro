@@ -2510,12 +2510,12 @@ $(function () {
         },
         smoothState = $('#main').smoothState(options).data('smoothState');
 
-
+/*
     $('.menu a, .pe-single-post-navigation a').not('.no-trans').on("click", function (e) {
         e.preventDefault();
         var content = $('#main').smoothState().data('smoothState');
         var href = $(this).attr('href');
         content.load(href);
     });
-
+*/
 });
