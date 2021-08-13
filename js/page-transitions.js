@@ -96,7 +96,6 @@ $(function () {
                 duration: 0,
                 // A function that dictates the animations that take place
                 render: function ($container) {
-                    
 
                 }
               },
@@ -1734,24 +1733,25 @@ $(function () {
 
                                 var imwDelay = $(this).data('delay');
 
-
                                 if ($(this).hasClass('has-animation')) {
 
+                                    var $parent = $(this);
 
-                                    var imwHeight = $(this).outerHeight();
+                                    imImg.on('load',function() {
+                                        console.log("The image source loaded is "+imImg.attr('src')+"; height: " + imImg.height() + "px");
 
-
-                                    $(this).css({
-                                        transitionDelay: '0s',
-                                        height: imwHeight + 'px'
-                                    })
-
-
+                                        var imwHeight = $(this).outerHeight();
+                                        $parent.css({
+                                            transitionDelay: '0s',
+                                            height: imwHeight + 'px'
+                                        });
+                                    });
+                                    
                                     imImg.css('position', 'absolute');
 
                                     if (($(this).hasClass('slide-left')) || ($(this).hasClass('slide-right'))) {
 
-                                        imImg.css('width', 'unset')
+                                        imImg.css('width', 'unset');
 
                                     }
 
