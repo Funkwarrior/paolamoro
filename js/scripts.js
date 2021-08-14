@@ -1275,9 +1275,11 @@
                                 if (position.scroll.y > (sss_block - gap) && position.scroll.y < (sss_block + sss_height - gap)) {
                                     $('.dark-logo').hide();
                                     $('.light-logo').show();
+                                    $('.menu-toggle').hide();
                                 } else {
                                     $('.dark-logo').show();
                                     $('.light-logo').hide();
+                                    $('.menu-toggle').show();
                                 }
                                 if (position.scroll.y > (sss_block - gap - ($(window).height() / 2))) {
                                     $('#rondella').addClass('rondella-init');
