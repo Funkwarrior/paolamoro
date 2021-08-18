@@ -85,6 +85,10 @@
     }
 
 
+    $('a.email-address').each(function(){
+        $(this).attr("href", "mailto: "+$(this).data('email')+"@"+$(this).data('address')).attr("title", $(this).data('email')+"@"+$(this).data('address'));
+    })
+    
     if ($('.single-project').length > 0) {
 
         $('.site-footer').addClass('project-footer');
